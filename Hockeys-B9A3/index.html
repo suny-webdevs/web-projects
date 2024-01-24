@@ -20,7 +20,7 @@
 </head>
 <body class="font-manrope">
     <!-- Header section -->
-    <header class="container mx-auto px-5 pt-5 pb-[25px]">
+    <header id="home" class="container mx-auto px-5 pt-5 pb-[25px]">
         <!-- Navbar -->
         <nav class="">
             <div class="navbar bg-base-100">
@@ -30,11 +30,11 @@
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </div>
                         <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Home</a></li>
-                            <li><a>About</a></li>
-                            <li><a>Pages</a></li>
-                            <li><a>Blog</a></li>
-                            <li><a>Contact</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#pages">Pages</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
                     <a href="#">
@@ -43,11 +43,11 @@
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="flex items-center gap-10 px-1">
-                        <li><a href="#" class="text-lg text-[#424247] font-semibold hover:text-[#FF4240]">Home</a></li>
-                        <li><a href="#" class="text-lg text-[#424247] font-semibold hover:text-[#FF4240]">About</a></li>
-                        <li><a href="#" class="text-lg text-[#424247] font-semibold hover:text-[#FF4240]">Pages</a></li>
-                        <li><a href="#" class="text-lg text-[#424247] font-semibold hover:text-[#FF4240]">Blog</a></li>
-                        <li><a href="#" class="text-lg text-[#424247] font-semibold hover:text-[#FF4240]">Contact</a></li>
+                        <li><a href="#home" class="text-lg text-[#424247] font-semibold hover:text-[#FF4240]">Home</a></li>
+                        <li><a href="#about" class="text-lg text-[#424247] font-semibold hover:text-[#FF4240]">About</a></li>
+                        <li><a href="#pages" class="text-lg text-[#424247] font-semibold hover:text-[#FF4240]">Pages</a></li>
+                        <li><a href="#blog" class="text-lg text-[#424247] font-semibold hover:text-[#FF4240]">Blog</a></li>
+                        <li><a href="#contact" class="text-lg text-[#424247] font-semibold hover:text-[#FF4240]">Contact</a></li>
                     </ul>
                 </div>
                 <div class="navbar-end flex gap-3">
@@ -99,7 +99,7 @@
     <!-- Main section -->
     <main class="container mx-auto px-5 pb-[25px]">
         <!-- Progress section -->
-        <section class="py-[25px]">
+        <section id="about" class="py-[25px]">
             <!-- Section title and subtitle -->
             <div class="py-12 mt-2 border-y border-dashed border-[rgba(19, 19, 24, 0.20)]">
                 <h1 class="text-[#131318] text-[22px] text-center lg:text-4xl font-extrabold mb-3">Professional Hockeys Club</h1>
@@ -130,7 +130,7 @@
             </div>
         </section>
         <!-- Program section -->
-        <section class="py-[25px]">
+        <section id="pages" class="py-[25px]">
             <!-- Section title and subtitle -->
             <div class="py-12 mt-2 border-y border-dashed border-[rgba(19, 19, 24, 0.20)]">
                 <h1 class="text-[#131318] text-[22px] text-center lg:text-4xl font-extrabold mb-3">Program Sections</h1>
@@ -139,30 +139,30 @@
             <!-- Section content -->
             <div class="py-[50px] space-y-5 lg:space-y-0 lg:grid grid-cols-2 gap-5">
                 <div class="card w-full bg-base-100 shadow-xl image-full">
-                    <figure><img class="w-full" src="./assets/Images/2.png" alt="Shoes" /></figure>
+                    <figure><img class="w-full bg-cover" src="./assets/Images/2.png" alt="Shoes" /></figure>
                     <div class="p-5 flex flex-col justify-center lg:justify-end gap-5 z-10">
                       <h2 class="text-white text-lg lg:text-2xl font-bold">Junior Program</h2>
-                      <p class="text-white text-[14px] lg:text-base font-medium">We have junior programmes. Because of this junior's can become expert.</p>
+                      <p class="text-white text-[14px] lg:text-base font-medium lg:pr-[200px]">We have junior programmes. Because of this junior's can become expert.</p>
                       <div class="card-actions">
                         <button class="btn bg-[#FF4240] hover:bg-white text-white hover:text-[#FF4240] text-[18px] lg:text-lg font-bold border-none">Register Now!</button>
                       </div>
                     </div>
                 </div>
                 <div class="card w-full bg-base-100 shadow-xl image-full">
-                    <figure><img class="w-full" src="./assets/Images/3.png" alt="Shoes" /></figure>
+                    <figure><img class="w-full bg-cover" src="./assets/Images/3.png" alt="Shoes" /></figure>
                     <div class="p-5 flex flex-col justify-center lg:justify-end gap-5 z-10">
                       <h2 class="text-white text-lg lg:text-2xl font-bold">Teenager Program</h2>
-                      <p class="text-white text-[14px] lg:text-base font-medium">We have teenager's programmes. Because of this teenager's can become expert.</p>
+                      <p class="text-white text-[14px] lg:text-base font-medium lg:pr-[200px]">We have teenager's programmes. Because of this teenager's can become expert.</p>
                       <div class="card-actions">
                         <button class="btn bg-[#FF4240] hover:bg-white text-white hover:text-[#FF4240] text-[18px] lg:text-lg font-bold border-none">Register Now!</button>
                       </div>
                     </div>
                 </div>
                 <div class="card w-full bg-base-100 shadow-xl image-full col-span-2">
-                    <figure><img class="w-full" src="./assets/Images/4.png" alt="Shoes" /></figure>
+                    <figure><img class="w-full bg-cover" src="./assets/Images/4.png" alt="Shoes" /></figure>
                     <div class="p-5 flex flex-col justify-center lg:justify-end gap-5 z-10">
                       <h2 class="text-white text-lg lg:text-2xl font-bold">Professional Program</h2>
-                      <p class="text-white text-[14px] lg:text-base font-medium lg:pr-[500px]">We have professional's programmes. Because of this professional's can gain more experiences.</p>
+                      <p class="text-white text-[14px] lg:text-base font-medium lg:pr-[800px]">We have professional's programmes. Because of this professional's can gain more experiences.</p>
                       <div class="card-actions">
                         <button class="btn bg-[#FF4240] hover:bg-white text-white hover:text-[#FF4240] text-[18px] lg:text-lg font-bold border-none">Register Now!</button>
                       </div>
@@ -171,7 +171,7 @@
             </div>
         </section>
         <!-- Products section -->
-        <section class="py-[25px]">
+        <section id="blog" class="py-[25px]">
             <!-- Section title and subtitle -->
             <div class="py-12 mt-2 border-y border-dashed border-[rgba(19, 19, 24, 0.20)]">
                 <h1 class="text-[#131318] text-[22px] text-center lg:text-4xl font-extrabold mb-3">Our New Products</h1>
@@ -182,7 +182,7 @@
                 <!-- Cart 1 -->
                 <div class="p-5 flex flex-col lg:flex-row gap-5 border border-1 border-gray-300 rounded-xl">
                     <!-- Cart photo -->
-                    <img class="w-full lg:w-[180px] lg:h-[180px] rounded-lg" src="./assets/Images/5.png" alt="">
+                    <img class="w-full lg:w-[180px] lg:h-[180px] rounded-lg bg-cover bg-center" src="./assets/Images/5.png" alt="">
                     <!-- Cart content -->
                     <div class="flex flex-col gap-2 lg:gap-6">
                         <!-- Icons, Title and description -->
@@ -220,7 +220,7 @@
                 <!-- Cart 2 -->
                 <div class="p-5 flex flex-col lg:flex-row gap-5 border border-1 border-gray-300 rounded-xl">
                     <!-- Cart photo -->
-                    <img class="w-full lg:w-[180px] lg:h-[180px] rounded-lg" src="./assets/Images/6.png" alt="">
+                    <img class="w-full lg:w-[180px] lg:h-[180px] rounded-lg bg-cover bg-center" src="./assets/Images/6.png" alt="">
                     <!-- Cart content -->
                     <div class="flex flex-col gap-2 lg:gap-6">
                         <!-- Icons, Title and description -->
@@ -258,7 +258,7 @@
                 <!-- Cart 3 -->
                 <div class="p-5 flex flex-col lg:flex-row gap-5 border border-1 border-gray-300 rounded-xl">
                     <!-- Cart photo -->
-                    <img class="w-full lg:w-[180px] lg:h-[180px] rounded-lg" src="./assets/Images/7.png" alt="">
+                    <img class="w-full lg:w-[180px] lg:h-[180px] rounded-lg bg-cover bg-center" src="./assets/Images/7.png" alt="">
                     <!-- Cart content -->
                     <div class="flex flex-col gap-2 lg:gap-6">
                         <!-- Icons, Title and description -->
@@ -296,7 +296,7 @@
                 <!-- Cart 4 -->
                 <div class="p-5 flex flex-col lg:flex-row gap-5 border border-1 border-gray-300 rounded-xl">
                     <!-- Cart photo -->
-                    <img class="w-full lg:w-[180px] lg:h-[180px] rounded-lg" src="./assets/Images/8.png" alt="">
+                    <img class="w-full lg:w-[180px] lg:h-[180px] rounded-lg bg-cover bg-center" src="./assets/Images/8.png" alt="">
                     <!-- Cart content -->
                     <div class="flex flex-col gap-2 lg:gap-6">
                         <!-- Icons, Title and description -->
@@ -334,7 +334,7 @@
                 <!-- Cart 5 -->
                 <div class="p-5 flex flex-col lg:flex-row gap-5 border border-1 border-gray-300 rounded-xl">
                     <!-- Cart photo -->
-                    <img class="w-full lg:w-[180px] lg:h-[180px] rounded-lg" src="./assets/Images/9.png" alt="">
+                    <img class="w-full lg:w-[180px] lg:h-[180px] rounded-lg bg-cover bg-center" src="./assets/Images/9.png" alt="">
                     <!-- Cart content -->
                     <div class="flex flex-col gap-2 lg:gap-6">
                         <!-- Icons, Title and description -->
@@ -372,7 +372,7 @@
                 <!-- Cart 6 -->
                 <div class="p-5 flex flex-col lg:flex-row gap-5 border border-1 border-gray-300 rounded-xl">
                     <!-- Cart photo -->
-                    <img class="w-full lg:w-[180px] lg:h-[180px] rounded-lg" src="./assets/Images/10.png" alt="">
+                    <img class="w-full lg:w-[180px] lg:h-[180px] rounded-lg bg-cover bg-center" src="./assets/Images/10.png" alt="">
                     <!-- Cart content -->
                     <div class="flex flex-col gap-2 lg:gap-6">
                         <!-- Icons, Title and description -->
@@ -418,9 +418,9 @@
             </div>
             <!-- Section content -->
             <div class="pt-[50px]">
-                <div class="p-5 w-full flex flex-col gap-5 lg:grid grid-cols-3 lg:gap-5 border border-1 border-[rgba(19, 19, 24, 0.10)] rounded-lg">
+                <div class="p-5 w-full flex flex-col gap-5 lg:grid grid-cols-3 lg:gap-5 border border-1 border-[rgba(19, 19, 24, 0.10)] rounded-2xl">
                     <!-- FAQ photo -->
-                    <img src="./assets/Images/11.png" class="w-full rounded-lg">
+                    <img src="./assets/Images/11.png" class="w-full rounded-lg bg-cover">
                     <!-- FAQ container -->
                     <div class="flex flex-col justify-center lg:col-span-2">
                         <!-- FAQ 1 -->
@@ -493,7 +493,7 @@
             </div>
         </section>
         <!-- Contact section -->
-        <section class="py-[25px]">
+        <section id="contact" class="py-[25px]">
             <!-- Section title and subtitle -->
             <div class="py-12 mt-2 border-y border-dashed border-[rgba(19, 19, 24, 0.20)]">
                 <h1 class="text-[#131318] text-[22px] text-center lg:text-4xl font-extrabold mb-3">Get In Touch</h1>

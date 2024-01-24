@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockeys - B9A3</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+<body class="font-manrope">
+    <!-- Header section -->
+    <header class="container mx-auto px-5 pt-5 pb-[25px]">
+        <!-- Navbar -->
+        <nav class="">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start flex items-center gap-3">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a href="#">
+                        <h1 class="text-[#131318] text-2xl font-extrabold">HOCKEY<span class="text-[#FF4240]">'</span>S</h1>
+                    </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="flex items-center gap-10 px-1">
+                        <li><a href="#" class="text-lg text-[#424247] font-semibold hover:text-[#FF4240]">Home</a></li>
+                        <li><a href="#" class="text-lg text-[#424247] font-semibold hover:text-[#FF4240]">About</a></li>
+                        <li><a href="#" class="text-lg text-[#424247] font-semibold hover:text-[#FF4240]">Pages</a></li>
+                        <li><a href="#" class="text-lg text-[#424247] font-semibold hover:text-[#FF4240]">Blog</a></li>
+                        <li><a href="#" class="text-lg text-[#424247] font-semibold hover:text-[#FF4240]">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end flex gap-3">
+                    <button class="hidden lg:flex btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                        </button>
+                    <button type="button" class="text-white text-[14px] lg:text-[18px] font-bold bg-[#FF4240] py-2 px-5 rounded-lg">Get Tickets</button>
+                </div>
+                </div>
+        </nav>
+        <!-- Carousel -->
+        <div class="py-5">
+            <div class="carousel w-full rounded-lg h-[250px] lg:h-[500px]">
+                <!-- Slide 1 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img class="w-full" src="./assets/Images/1.png" />
+                  <div class="hidden lg:block lg:absolute bg-[#131318] p-5 rounded-xl right-5 bottom-5">
+                    <h3 class="text-white text-2xl font-extrabold">Meet all the heros from the field</h3>
+                    <p class="text-gray-500 text-base font-medium">This is batch nine. There are 48k heros. All heros are heros. You can meet all our heros.</p>
+                  </div>
+                  <div class="w-full absolute flex gap-4 lg:gap-5 left-[40%] bottom-8 lg:left-8 lg:bottom-8">
+                    <a href="#slide3" class="px-[13px] py-[5px] rounded-full text-white bg-[#131318] border-none">❮</a> 
+                    <a href="#slide2" class="px-[13px] py-[5px] rounded-full text-white bg-[#131318] border-none">❯</a>
+                  </div>
+                </div>
+                <!-- Slide 2 -->
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="./assets/Images/1.png" class="w-full" />
+                  <div class="w-full absolute flex gap-4 lg:gap-5 left-[40%] bottom-8 lg:left-8 lg:bottom-8">
+                    <a href="#slide1" class="px-[13px] py-[5px] rounded-full text-white bg-[#131318] border-none">❮</a> 
+                    <a href="#slide3" class="px-[13px] py-[5px] rounded-full text-white bg-[#131318] border-none">❯</a>
+                  </div>
+                </div>
+                <!-- Slide 3 -->
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="./assets/Images/1.png" class="w-full" />
+                  <div class="w-full absolute flex gap-4 lg:gap-5 left-[40%] bottom-8 lg:left-8 lg:bottom-8">
+                    <a href="#slide2" class="px-[13px] py-[5px] rounded-full text-white bg-[#131318] border-none">❮</a> 
+                    <a href="#slide1" class="px-[13px] py-[5px] rounded-full text-white bg-[#131318] border-none">❯</a>
+                  </div>
+                </div>
+            </div>
+            <div class="lg:hidden bg-[#131318] p-5 rounded-lg right-5 bottom-5">
+                <h3 class="text-white text-xl font-extrabold mb-2">Meet all the heros from the field</h3>
+                <p class="text-gray-500 text-[14px] font-medium">This is batch nine. There are 48k heros. All heros are heros. You can meet all our heros.</p>
+              </div>
+        </div>
+    </header>
+    <!-- Main section -->
+    <main class="container mx-auto px-5 pb-[25px]">
+        <!-- Progress section -->
+        <section class="py-[25px]">
+            <!-- Section title and subtitle -->
+            <div class="py-12 mt-2 border-y border-dashed border-[rgba(19, 19, 24, 0.20)]">
+                <h1 class="text-[#131318] text-[22px] text-center lg:text-4xl font-extrabold mb-3">Professional Hockeys Club</h1>
+                <p class="text-[14px] text-center lg:text-base text-[rgba(19, 19, 24, 0.60)] font-semibold px-10">This is batch nine. There are 48k heros. All heros are heros. You can meet all our heros.</p>
+            </div>
+            <!-- Section content -->
+            <div class="lg:flex justify-around">
+                <div class="flex flex-col gap-1 items-center justify-center py-10">
+                    <div class="radial-progress text-[#FF4240] text-lg font-extrabold" style="--value:87; --size:7rem; --thickness:11px;" role="progressbar">87%</div>
+                    <h3 class="text-center text-lg text-[#131318] font-semibold mt-3">Prayer Facility</h3>
+                    <p class="text-center text-base text-[rgba(19, 19, 24, 0.60)] px-12">We have prayer facility. And this is for all religion.</p>
+                </div>
+                <div class="flex flex-col gap-1 items-center justify-center py-10">
+                    <div class="radial-progress text-[#49D293] text-lg font-extrabold" style="--value:95; --size:7rem; --thickness:11px;" role="progressbar">95%</div>
+                    <h3 class="text-center text-lg text-[#131318] font-semibold mt-3">Experienced Coach</h3>
+                    <p class="text-center text-base text-[rgba(19, 19, 24, 0.60)] px-12">We have prayer Experienced Coach. And this is for all students.</p>
+                </div>
+                <div class="flex flex-col gap-1 items-center justify-center py-10">
+                    <div class="radial-progress text-[#FFB546] text-lg font-extrabold" style="--value:90; --size:7rem; --thickness:11px;" role="progressbar">90%</div>
+                    <h3 class="text-center text-lg text-[#131318] font-semibold mt-3">Senior Player</h3>
+                    <p class="text-center text-base text-[rgba(19, 19, 24, 0.60)] px-12">We have Senior prayer. And this is for all religion.</p>
+                </div>
+                <div class="flex flex-col gap-1 items-center justify-center py-10">
+                    <div class="radial-progress text-[#4C8DF1] text-lg font-extrabold" style="--value:80; --size:7rem; --thickness:11px;" role="progressbar">80%</div>
+                    <h3 class="text-center text-lg text-[#131318] font-semibold mt-3">Training Ground</h3>
+                    <p class="text-center text-base text-[rgba(19, 19, 24, 0.60)] px-12">We have Training Ground. And this is for all students.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Program section -->
+        <section class="py-[25px]">
+            <!-- Section title and subtitle -->
+            <div class="py-12 mt-2 border-y border-dashed border-[rgba(19, 19, 24, 0.20)]">
+                <h1 class="text-[#131318] text-[22px] text-center lg:text-4xl font-extrabold mb-3">Program Sections</h1>
+                <p class="text-[14px] text-center lg:text-base text-[rgba(19, 19, 24, 0.60)] font-semibold px-10">This is batch nine. There are 48k heros. All heros are heros. You can meet all our heros.</p>
+            </div>
+            <!-- Section content -->
+            <div class="py-[50px] space-y-5 lg:space-y-0 lg:grid grid-cols-2 gap-5">
+                <div class="card w-full bg-base-100 shadow-xl image-full">
+                    <figure><img class="w-full" src="./assets/Images/2.png" alt="Shoes" /></figure>
+                    <div class="p-5 flex flex-col justify-center lg:justify-end gap-5 z-10">
+                      <h2 class="text-white text-lg lg:text-2xl font-bold">Junior Program</h2>
+                      <p class="text-white text-[14px] lg:text-base font-medium">We have junior programmes. Because of this junior's can become expert.</p>
+                      <div class="card-actions">
+                        <button class="btn bg-[#FF4240] hover:bg-white text-white hover:text-[#FF4240] text-[18px] lg:text-lg font-bold border-none">Register Now!</button>
+                      </div>
+                    </div>
+                </div>
+                <div class="card w-full bg-base-100 shadow-xl image-full">
+                    <figure><img class="w-full" src="./assets/Images/3.png" alt="Shoes" /></figure>
+                    <div class="p-5 flex flex-col justify-center lg:justify-end gap-5 z-10">
+                      <h2 class="text-white text-lg lg:text-2xl font-bold">Teenager Program</h2>
+                      <p class="text-white text-[14px] lg:text-base font-medium">We have teenager's programmes. Because of this teenager's can become expert.</p>
+                      <div class="card-actions">
+                        <button class="btn bg-[#FF4240] hover:bg-white text-white hover:text-[#FF4240] text-[18px] lg:text-lg font-bold border-none">Register Now!</button>
+                      </div>
+                    </div>
+                </div>
+                <div class="card w-full bg-base-100 shadow-xl image-full col-span-2">
+                    <figure><img class="w-full" src="./assets/Images/4.png" alt="Shoes" /></figure>
+                    <div class="p-5 flex flex-col justify-center lg:justify-end gap-5 z-10">
+                      <h2 class="text-white text-lg lg:text-2xl font-bold">Professional Program</h2>
+                      <p class="text-white text-[14px] lg:text-base font-medium lg:pr-[500px]">We have professional's programmes. Because of this professional's can gain more experiences.</p>
+                      <div class="card-actions">
+                        <button class="btn bg-[#FF4240] hover:bg-white text-white hover:text-[#FF4240] text-[18px] lg:text-lg font-bold border-none">Register Now!</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Products section -->
+        <section class="py-[25px]">
+            <!-- Section title and subtitle -->
+            <div class="py-12 mt-2 border-y border-dashed border-[rgba(19, 19, 24, 0.20)]">
+                <h1 class="text-[#131318] text-[22px] text-center lg:text-4xl font-extrabold mb-3">Our New Products</h1>
+                <p class="text-[14px] text-center lg:text-base text-[rgba(19, 19, 24, 0.60)] font-semibold px-10">This is batch nine. There are 48k heros. All heros are heros. You can meet all our heros.</p>
+            </div>
+            <!-- Section content -->
+            <div class="pt-[50px] grid gap-5 lg:grid-cols-2">
+                <!-- Cart 1 -->
+                <div class="p-5 flex flex-col lg:flex-row gap-5 border border-1 border-gray-300 rounded-xl">
+                    <!-- Cart photo -->
+                    <img class="w-full lg:w-[180px] lg:h-[180px] rounded-lg" src="./assets/Images/5.png" alt="">
+                    <!-- Cart content -->
+                    <div class="flex flex-col gap-2 lg:gap-6">
+                        <!-- Icons, Title and description -->
+                        <div class="flex flex-col gap-2 lg:gap-4">
+                            <!-- Icons -->
+                            <div class="flex gap-5 mt-2 lg:mt-0">
+                                <div class="flex gap-2">
+                                    <img src="./public/images/star.svg" alt="">
+                                    <span>5.0</span>
+                                </div>
+                                <div class="flex gap-2">
+                                    <img src="./public/images/eye.svg" alt="">
+                                    <span>20</span>
+                                </div>
+                                <div class="flex gap-2">
+                                    <img src="./public/images/heart.svg" alt="">
+                                    <span>200</span>
+                                </div>
+                            </div>
+                            <!-- Title -->
+                            <h3 class="text-[#131318] text-lg font-extrabold">World Cup Flags Football</h3>
+                            <!-- Description -->
+                            <p class="text-[rgba(19, 19, 24, 0.60)] text-base font-medium">This world cup flags football jacket contains 100% cotton and comfortable.</p>
+                        </div>
+                        <!-- Price and delivery -->
+                        <div class="w-full flex flex-col lg:flex-row gap-3 lg:gap-5">
+                            <h2 class="text-[#FF4240] text-[18px] font-extrabold">Price - $22.00</h2>
+                            <div class="flex gap-2">
+                                <img src="./public/images/cart.svg" alt="">
+                                <p class="text-gray-500 text-base font-medium whitespace-nowrap">Delivery Fee : Free</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cart 2 -->
+                <div class="p-5 flex flex-col lg:flex-row gap-5 border border-1 border-gray-300 rounded-xl">
+                    <!-- Cart photo -->
+                    <img class="w-full lg:w-[180px] lg:h-[180px] rounded-lg" src="./assets/Images/6.png" alt="">
+                    <!-- Cart content -->
+                    <div class="flex flex-col gap-2 lg:gap-6">
+                        <!-- Icons, Title and description -->
+                        <div class="flex flex-col gap-2 lg:gap-4">
+                            <!-- Icons -->
+                            <div class="flex gap-5 mt-2 lg:mt-0">
+                                <div class="flex gap-2">
+                                    <img src="./public/images/star.svg" alt="">
+                                    <span>5.0</span>
+                                </div>
+                                <div class="flex gap-2">
+                                    <img src="./public/images/eye.svg" alt="">
+                                    <span>20</span>
+                                </div>
+                                <div class="flex gap-2">
+                                    <img src="./public/images/heart.svg" alt="">
+                                    <span>200</span>
+                                </div>
+                            </div>
+                            <!-- Title -->
+                            <h3 class="text-[#131318] text-lg font-extrabold">World Cup Flags Football</h3>
+                            <!-- Description -->
+                            <p class="text-[rgba(19, 19, 24, 0.60)] text-base font-medium">This world cup flags football jacket contains 100% cotton and comfortable.</p>
+                        </div>
+                        <!-- Price and delivery -->
+                        <div class="w-full flex flex-col lg:flex-row gap-3 lg:gap-5">
+                            <h2 class="text-[#FF4240] text-[18px] font-extrabold">Price - $22.00</h2>
+                            <div class="flex gap-2">
+                                <img src="./public/images/cart.svg" alt="">
+                                <p class="text-gray-500 text-base font-medium whitespace-nowrap">Delivery Fee : Free</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cart 3 -->
+                <div class="p-5 flex flex-col lg:flex-row gap-5 border border-1 border-gray-300 rounded-xl">
+                    <!-- Cart photo -->
+                    <img class="w-full lg:w-[180px] lg:h-[180px] rounded-lg" src="./assets/Images/7.png" alt="">
+                    <!-- Cart content -->
+                    <div class="flex flex-col gap-2 lg:gap-6">
+                        <!-- Icons, Title and description -->
+                        <div class="flex flex-col gap-2 lg:gap-4">
+                            <!-- Icons -->
+                            <div class="flex gap-5 mt-2 lg:mt-0">
+                                <div class="flex gap-2">
+                                    <img src="./public/images/star.svg" alt="">
+                                    <span>5.0</span>
+                                </div>
+                                <div class="flex gap-2">
+                                    <img src="./public/images/eye.svg" alt="">
+                                    <span>20</span>
+                                </div>
+                                <div class="flex gap-2">
+                                    <img src="./public/images/heart.svg" alt="">
+                                    <span>200</span>
+                                </div>
+                            </div>
+                            <!-- Title -->
+                            <h3 class="text-[#131318] text-lg font-extrabold">Cap For Hockeys</h3>
+                            <!-- Description -->
+                            <p class="text-[rgba(19, 19, 24, 0.60)] text-base font-medium">This world cup flags football CAP contains 100% cotton and comfortable.</p>
+                        </div>
+                        <!-- Price and delivery -->
+                        <div class="w-full flex flex-col lg:flex-row gap-3 lg:gap-5">
+                            <h2 class="text-[#FF4240] text-[18px] font-extrabold">Price - $22.00</h2>
+                            <div class="flex gap-2">
+                                <img src="./public/images/cart.svg" alt="">
+                                <p class="text-gray-500 text-base font-medium whitespace-nowrap">Delivery Fee : Free</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cart 4 -->
+                <div class="p-5 flex flex-col lg:flex-row gap-5 border border-1 border-gray-300 rounded-xl">
+                    <!-- Cart photo -->
+                    <img class="w-full lg:w-[180px] lg:h-[180px] rounded-lg" src="./assets/Images/8.png" alt="">
+                    <!-- Cart content -->
+                    <div class="flex flex-col gap-2 lg:gap-6">
+                        <!-- Icons, Title and description -->
+                        <div class="flex flex-col gap-2 lg:gap-4">
+                            <!-- Icons -->
+                            <div class="flex gap-5 mt-2 lg:mt-0">
+                                <div class="flex gap-2">
+                                    <img src="./public/images/star.svg" alt="">
+                                    <span>5.0</span>
+                                </div>
+                                <div class="flex gap-2">
+                                    <img src="./public/images/eye.svg" alt="">
+                                    <span>20</span>
+                                </div>
+                                <div class="flex gap-2">
+                                    <img src="./public/images/heart.svg" alt="">
+                                    <span>200</span>
+                                </div>
+                            </div>
+                            <!-- Title -->
+                            <h3 class="text-[#131318] text-lg font-extrabold">World Cup Flags Football</h3>
+                            <!-- Description -->
+                            <p class="text-[rgba(19, 19, 24, 0.60)] text-base font-medium">This world cup flags football jacket contains 100% cotton and comfortable.</p>
+                        </div>
+                        <!-- Price and delivery -->
+                        <div class="w-full flex flex-col lg:flex-row gap-3 lg:gap-5">
+                            <h2 class="text-[#FF4240] text-[18px] font-extrabold">Price - $22.00</h2>
+                            <div class="flex gap-2">
+                                <img src="./public/images/cart.svg" alt="">
+                                <p class="text-gray-500 text-base font-medium whitespace-nowrap">Delivery Fee : Free</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cart 5 -->
+                <div class="p-5 flex flex-col lg:flex-row gap-5 border border-1 border-gray-300 rounded-xl">
+                    <!-- Cart photo -->
+                    <img class="w-full lg:w-[180px] lg:h-[180px] rounded-lg" src="./assets/Images/9.png" alt="">
+                    <!-- Cart content -->
+                    <div class="flex flex-col gap-2 lg:gap-6">
+                        <!-- Icons, Title and description -->
+                        <div class="flex flex-col gap-2 lg:gap-4">
+                            <!-- Icons -->
+                            <div class="flex gap-5 mt-2 lg:mt-0">
+                                <div class="flex gap-2">
+                                    <img src="./public/images/star.svg" alt="">
+                                    <span>5.0</span>
+                                </div>
+                                <div class="flex gap-2">
+                                    <img src="./public/images/eye.svg" alt="">
+                                    <span>20</span>
+                                </div>
+                                <div class="flex gap-2">
+                                    <img src="./public/images/heart.svg" alt="">
+                                    <span>200</span>
+                                </div>
+                            </div>
+                            <!-- Title -->
+                            <h3 class="text-[#131318] text-lg font-extrabold">World Cup Flags Football</h3>
+                            <!-- Description -->
+                            <p class="text-[rgba(19, 19, 24, 0.60)] text-base font-medium">This world cup flags football jacket contains 100% cotton and comfortable.</p>
+                        </div>
+                        <!-- Price and delivery -->
+                        <div class="w-full flex flex-col lg:flex-row gap-3 lg:gap-5">
+                            <h2 class="text-[#FF4240] text-[18px] font-extrabold">Price - $22.00</h2>
+                            <div class="flex gap-2">
+                                <img src="./public/images/cart.svg" alt="">
+                                <p class="text-gray-500 text-base font-medium whitespace-nowrap">Delivery Fee : Free</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cart 6 -->
+                <div class="p-5 flex flex-col lg:flex-row gap-5 border border-1 border-gray-300 rounded-xl">
+                    <!-- Cart photo -->
+                    <img class="w-full lg:w-[180px] lg:h-[180px] rounded-lg" src="./assets/Images/10.png" alt="">
+                    <!-- Cart content -->
+                    <div class="flex flex-col gap-2 lg:gap-6">
+                        <!-- Icons, Title and description -->
+                        <div class="flex flex-col gap-2 lg:gap-4">
+                            <!-- Icons -->
+                            <div class="flex gap-5 mt-2 lg:mt-0">
+                                <div class="flex gap-2">
+                                    <img src="./public/images/star.svg" alt="">
+                                    <span>5.0</span>
+                                </div>
+                                <div class="flex gap-2">
+                                    <img src="./public/images/eye.svg" alt="">
+                                    <span>20</span>
+                                </div>
+                                <div class="flex gap-2">
+                                    <img src="./public/images/heart.svg" alt="">
+                                    <span>200</span>
+                                </div>
+                            </div>
+                            <!-- Title -->
+                            <h3 class="text-[#131318] text-lg font-extrabold">World Cup Flags Football</h3>
+                            <!-- Description -->
+                            <p class="text-[rgba(19, 19, 24, 0.60)] text-base font-medium">This world cup flags football jacket contains 100% cotton and comfortable.</p>
+                        </div>
+                        <!-- Price and delivery -->
+                        <div class="w-full flex flex-col lg:flex-row gap-3 lg:gap-5">
+                            <h2 class="text-[#FF4240] text-[18px] font-extrabold">Price - $22.00</h2>
+                            <div class="flex gap-2">
+                                <img src="./public/images/cart.svg" alt="">
+                                <p class="text-gray-500 text-base font-medium whitespace-nowrap">Delivery Fee : Free</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ section -->
+        <section class="py-[25px]">
+            <!-- Section title and subtitle -->
+            <div class="py-12 mt-2 border-y border-dashed border-[rgba(19, 19, 24, 0.20)]">
+                <h1 class="text-[#131318] text-[22px] text-center lg:text-4xl font-extrabold mb-3">Clients Question</h1>
+                <p class="text-[14px] text-center lg:text-base text-[rgba(19, 19, 24, 0.60)] font-semibold px-10">This is batch nine. There are 48k heros. All heros are heros. You can meet all our heros.</p>
+            </div>
+            <!-- Section content -->
+            <div class="pt-[50px]">
+                <div class="p-5 flex flex-col lg:flex-row lg:justify-center border border-1 border-[rgba(19, 19, 24, 0.10)] rounded-lg">
+                    <!-- FAQ photo -->
+                    <img src="./assets/Images/11.png" class="w-full lg:w-[440px] lg:h-[470px] mb-5 lg:mr-5 rounded-lg">
+                    <!-- FAQ container -->
+                    <div class="flex flex-col justify-center">
+                        <!-- FAQ 1 -->
+                        <div class="collapse collapse-plus bg-white">
+                            <input type="radio" name="my-accordion-3" checked="checked" /> 
+                            <div class="collapse-title text-xl font-medium">
+                              <h3 class="text-[#131318] text-lg font-bold">Our Equipment</h3>
+                            </div>
+                            <div class="collapse-content"> 
+                              <p class="text-[rgba(19, 19, 24, 0.60)] text-base">We have all equipment's to play hockey. So don't take pressure.</p>
+                            </div>
+                        </div>
+                        <hr class="w-[94%] mx-auto">
+                        <!-- FAQ 2 -->
+                        <div class="collapse collapse-plus bg-white">
+                            <input type="radio" name="my-accordion-3" /> 
+                            <div class="collapse-title text-xl font-medium">
+                                <h3 class="text-[#131318] text-lg font-bold">Hockey Training</h3>
+                            </div>
+                            <div class="collapse-content"> 
+                                <p class="text-[rgba(19, 19, 24, 0.60)] text-base">We have all hockey training to play hockey. So don't take pressure.</p>
+                            </div>
+                        </div>
+                        <hr class="w-[94%] mx-auto">
+                        <!-- FAQ 3 -->
+                        <div class="collapse collapse-plus bg-white">
+                            <input type="radio" name="my-accordion-3" /> 
+                            <div class="collapse-title text-xl font-medium">
+                                <h3 class="text-[#131318] text-lg font-bold">Private Lessons</h3>
+                            </div>
+                            <div class="collapse-content"> 
+                                <p class="text-[rgba(19, 19, 24, 0.60)] text-base">We have all private lessons to play hockey. So don't take pressure.</p>
+                            </div>
+                        </div>
+                        <hr class="w-[94%] mx-auto">
+                        <!-- FAQ 4 -->
+                        <div class="collapse collapse-plus bg-white">
+                            <input type="radio" name="my-accordion-3" /> 
+                            <div class="collapse-title text-xl font-medium">
+                                <h3 class="text-[#131318] text-lg font-bold">Ski Touring</h3>
+                            </div>
+                            <div class="collapse-content"> 
+                                <p class="text-[rgba(19, 19, 24, 0.60)] text-base">We have all Ski Touring to play hockey. So don't take pressure.</p>
+                            </div>
+                        </div>
+                        <hr class="w-[94%] mx-auto">
+                        <!-- FAQ 5 -->
+                        <div class="collapse collapse-plus bg-white">
+                            <input type="radio" name="my-accordion-3" /> 
+                            <div class="collapse-title text-xl font-medium">
+                                <h3 class="text-[#131318] text-lg font-bold">Booking</h3>
+                            </div>
+                            <div class="collapse-content"> 
+                                <p class="text-[rgba(19, 19, 24, 0.60)] text-base">We have all Booking to play hockey. So don't take pressure.</p>
+                            </div>
+                        </div>
+                        <hr class="w-[94%] mx-auto">
+                        <!-- FAQ 6 -->
+                        <div class="collapse collapse-plus bg-white">
+                            <input type="radio" name="my-accordion-3" /> 
+                            <div class="collapse-title text-xl font-medium">
+                                <h3 class="text-[#131318] text-lg font-bold">Pricing</h3>
+                            </div>
+                            <div class="collapse-content"> 
+                                <p class="text-[rgba(19, 19, 24, 0.60)] text-base">We have all Pricing to play hockey. So don't take pressure.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer section -->
+    <footer class="">
+
+    </footer>
+</body>
+</html>
